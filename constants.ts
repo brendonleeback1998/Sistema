@@ -58,251 +58,37 @@ export const MOCK_CONTENT: BeltContent[] = [
 export const MOCK_STUDENTS: Student[] = [
   {
     id: '1',
-    name: 'Carlos Silva',
-    birthDate: '1995-05-10',
+    name: 'Aluno Modelo',
+    birthDate: '1995-05-15',
     cpf: '123.456.789-00',
-    fatherName: 'Roberto Silva',
-    motherName: 'Maria Silva',
-    email: 'carlos.silva@email.com',
-    phone: '(11) 99999-1234',
-    emergencyContact: '(11) 99999-0000 (Mãe)',
-    belt: BeltColor.Brown,
+    fatherName: 'Pai do Aluno',
+    motherName: 'Mãe do Aluno',
+    email: 'aluno@shogukan.com',
+    phone: '(11) 99999-9999',
+    emergencyContact: '(11) 98888-8888 (Mãe)',
+    belt: BeltColor.Purple,
     status: StudentStatus.Active,
-    joinDate: '2020-03-15',
-    photoUrl: 'https://picsum.photos/100/100?random=1',
+    joinDate: '2022-02-10',
+    photoUrl: 'https://ui-avatars.com/api/?name=Aluno+Modelo&background=random&color=fff',
     planId: '2',
-    lastExamDate: '2023-11-20',
+    lastExamDate: '2024-01-20',
+    notes: 'Aluno dedicado, foco em Kumite.',
     beltHistory: [
-      { belt: BeltColor.White, date: '2020-03-15', notes: 'Início' },
-      { belt: BeltColor.Yellow, date: '2020-09-10' },
-      { belt: BeltColor.Red, date: '2021-04-15' },
-      { belt: BeltColor.Orange, date: '2021-11-20' },
-      { belt: BeltColor.Green, date: '2022-06-15' },
-      { belt: BeltColor.Purple, date: '2023-02-10' },
-      { belt: BeltColor.Brown, date: '2023-11-20', notes: 'Exame excepcional' }
-    ]
-  },
-  {
-    id: '2',
-    name: 'Mariana Souza',
-    birthDate: '1998-08-22',
-    cpf: '234.567.890-11',
-    motherName: 'Ana Souza',
-    email: 'mari.souza@email.com',
-    phone: '(11) 98888-5678',
-    emergencyContact: '(11) 98888-1111 (Marido)',
-    belt: BeltColor.Green,
-    status: StudentStatus.Active,
-    joinDate: '2021-06-10',
-    photoUrl: 'https://picsum.photos/100/100?random=2',
-    planId: '1',
-    lastExamDate: '2023-08-15',
-    beltHistory: [
-      { belt: BeltColor.White, date: '2021-06-10' },
-      { belt: BeltColor.Yellow, date: '2021-12-05' },
-      { belt: BeltColor.Red, date: '2022-07-20' },
-      { belt: BeltColor.Orange, date: '2023-01-15' },
-      { belt: BeltColor.Green, date: '2023-08-15' }
-    ]
-  },
-  {
-    id: '3',
-    name: 'Pedro Santos',
-    birthDate: '2010-02-15',
-    cpf: '345.678.901-22',
-    fatherName: 'João Santos',
-    motherName: 'Carla Santos',
-    email: 'pedro.santos@email.com',
-    phone: '(11) 97777-4321',
-    emergencyContact: '(11) 97777-0000 (Pai)',
-    belt: BeltColor.White,
-    status: StudentStatus.Active,
-    joinDate: '2024-01-10',
-    planId: '1',
-    photoUrl: 'https://picsum.photos/100/100?random=3',
-    beltHistory: [
-      { belt: BeltColor.White, date: '2024-01-10', notes: 'Matrícula realizada' }
-    ]
-  },
-  {
-    id: '4',
-    name: 'Ana Oliveira',
-    birthDate: '1990-11-30',
-    cpf: '456.789.012-33',
-    email: 'ana.oli@email.com',
-    phone: '(11) 96666-9876',
-    emergencyContact: '(11) 96666-1111 (Irmã)',
-    belt: BeltColor.Black,
-    status: StudentStatus.Inactive,
-    joinDate: '2018-02-01',
-    photoUrl: 'https://picsum.photos/100/100?random=4',
-    lastExamDate: '2022-12-10',
-    beltHistory: []
-  },
-  {
-    id: '5',
-    name: 'Lucas Pereira',
-    birthDate: '2015-07-07',
-    cpf: '567.890.123-44',
-    fatherName: 'Marcos Pereira',
-    motherName: 'Juliana Pereira',
-    email: 'lucas.p@email.com',
-    phone: '(11) 95555-1122',
-    emergencyContact: '(11) 95555-0000 (Mãe)',
-    belt: BeltColor.Yellow,
-    status: StudentStatus.Paused,
-    joinDate: '2023-05-20',
-    photoUrl: 'https://picsum.photos/100/100?random=5',
-    planId: '5',
-    lastExamDate: '2023-09-01',
-    beltHistory: [
-      { belt: BeltColor.White, date: '2023-05-20' },
-      { belt: BeltColor.Yellow, date: '2023-09-01' }
-    ]
-  },
-  {
-    id: '6',
-    name: 'Brendon',
-    birthDate: '1998-06-23',
-    cpf: '000.000.000-00',
-    fatherName: 'Pai do Brendon',
-    motherName: 'Mãe do Brendon',
-    email: 'brendon@email.com',
-    phone: '(11) 99999-8888',
-    emergencyContact: '(11) 97777-6666',
-    belt: BeltColor.White,
-    status: StudentStatus.Active,
-    joinDate: '2024-05-20',
-    photoUrl: 'https://ui-avatars.com/api/?name=Brendon&background=random',
-    planId: '1',
-    beltHistory: [
-      { belt: BeltColor.White, date: '2024-05-20', notes: 'Matrícula Inicial' }
-    ]
+      { belt: BeltColor.White, date: '2022-02-10', notes: 'Início' },
+      { belt: BeltColor.Yellow, date: '2022-08-15' },
+      { belt: BeltColor.Red, date: '2023-02-20' },
+      { belt: BeltColor.Orange, date: '2023-08-10' },
+      { belt: BeltColor.Green, date: '2024-01-20' }
+    ],
+    // Login personalizado solicitado
+    customLogin: 'aluno',
+    password: '1234'
   }
 ];
 
-export const MOCK_PAYMENTS: Payment[] = [
-  {
-    id: '101',
-    studentId: '1',
-    studentName: 'Carlos Silva',
-    amount: 150.00,
-    dueDate: '2024-05-10',
-    paidDate: '2024-05-08',
-    status: PaymentStatus.Paid,
-    description: 'Mensalidade Maio/2024',
-    type: 'tuition'
-  },
-  {
-    id: '102',
-    studentId: '2',
-    studentName: 'Mariana Souza',
-    amount: 150.00,
-    dueDate: '2024-05-10',
-    status: PaymentStatus.Overdue,
-    description: 'Mensalidade Maio/2024',
-    type: 'tuition'
-  },
-  {
-    id: '103',
-    studentId: '3',
-    studentName: 'Pedro Santos',
-    amount: 150.00,
-    dueDate: '2024-05-10',
-    paidDate: '2024-05-05',
-    status: PaymentStatus.Paid,
-    description: 'Mensalidade Maio/2024',
-    type: 'tuition'
-  },
-  {
-    id: '104',
-    studentId: '1',
-    studentName: 'Carlos Silva',
-    amount: 120.00,
-    dueDate: '2024-04-10',
-    paidDate: '2024-04-10',
-    status: PaymentStatus.Paid,
-    description: 'Mensalidade Abril/2024',
-    type: 'tuition'
-  },
-  {
-    id: '105',
-    studentId: '2',
-    studentName: 'Mariana Souza',
-    amount: 80.00,
-    dueDate: '2024-05-15',
-    status: PaymentStatus.Pending,
-    description: 'Exame de Faixa',
-    type: 'service'
-  },
-  {
-    id: '106',
-    studentId: '5',
-    studentName: 'Lucas Pereira',
-    amount: 150.00,
-    dueDate: '2024-05-10',
-    status: PaymentStatus.Pending,
-    description: 'Mensalidade Maio/2024',
-    type: 'tuition'
-  },
-  {
-    id: '107',
-    studentId: '1',
-    studentName: 'Carlos Silva',
-    amount: 180.00,
-    dueDate: '2024-05-05',
-    paidDate: '2024-05-05',
-    status: PaymentStatus.Paid,
-    description: 'Kimono Iniciante (M)',
-    type: 'product',
-    productId: 'p1'
-  },
-  {
-    id: '108',
-    studentId: '6',
-    studentName: 'Brendon',
-    amount: 150.00,
-    dueDate: new Date().toISOString().split('T')[0],
-    status: PaymentStatus.Pending,
-    description: 'Mensalidade Atual',
-    type: 'tuition'
-  }
-];
+export const MOCK_PAYMENTS: Payment[] = [];
 
-export const MOCK_FINANCIAL_RECORDS: FinancialRecord[] = [
-  {
-    id: 'f1',
-    type: 'expense',
-    description: 'Aluguel do Espaço',
-    category: 'Infraestrutura',
-    amount: 1200.00,
-    date: '2024-05-05'
-  },
-  {
-    id: 'f2',
-    type: 'expense',
-    description: 'Conta de Luz',
-    category: 'Utilidades',
-    amount: 180.50,
-    date: '2024-05-10'
-  },
-  {
-    id: 'f3',
-    type: 'income',
-    description: 'Venda de Kimono',
-    category: 'Loja',
-    amount: 250.00,
-    date: '2024-05-12'
-  },
-  {
-    id: 'f4',
-    type: 'expense',
-    description: 'Material de Limpeza',
-    category: 'Manutenção',
-    amount: 45.90,
-    date: '2024-05-15'
-  }
-];
+export const MOCK_FINANCIAL_RECORDS: FinancialRecord[] = [];
 
 export const BELT_COLORS_MAP: Record<BeltColor, string> = {
   [BeltColor.White]: 'bg-slate-100 border-slate-300 text-slate-700',
