@@ -32,7 +32,7 @@ export const MOCK_CONTENT: BeltContent[] = [
     description: 'Passo a passo do primeiro Kata.',
     belt: BeltColor.White,
     videoUrl: 'https://www.youtube.com/watch?v=abc456',
-    daysToUnlock: 15, // Libera 15 dias após o início
+    daysToUnlock: 15,
     createdAt: '2024-01-01'
   },
   {
@@ -58,8 +58,8 @@ export const MOCK_CONTENT: BeltContent[] = [
 export const MOCK_STUDENTS: Student[] = [
   {
     id: '1',
-    name: 'Aluno Modelo',
-    birthDate: '1995-05-15',
+    name: 'Aluno Exemplo',
+    birthDate: '1998-05-15',
     cpf: '123.456.789-00',
     fatherName: 'Pai do Aluno',
     motherName: 'Mãe do Aluno',
@@ -68,19 +68,20 @@ export const MOCK_STUDENTS: Student[] = [
     emergencyContact: '(11) 98888-8888 (Mãe)',
     belt: BeltColor.Purple,
     status: StudentStatus.Active,
-    joinDate: '2022-02-10',
-    photoUrl: 'https://ui-avatars.com/api/?name=Aluno+Modelo&background=random&color=fff',
+    joinDate: '2022-01-10',
+    photoUrl: 'https://ui-avatars.com/api/?name=Aluno+Exemplo&background=random&color=fff',
     planId: '2',
-    lastExamDate: '2024-01-20',
-    notes: 'Aluno dedicado, foco em Kumite.',
+    lastExamDate: '2024-02-20',
+    notes: 'Aluno com excelente desempenho técnico.',
     beltHistory: [
-      { belt: BeltColor.White, date: '2022-02-10', notes: 'Início' },
-      { belt: BeltColor.Yellow, date: '2022-08-15' },
-      { belt: BeltColor.Red, date: '2023-02-20' },
-      { belt: BeltColor.Orange, date: '2023-08-10' },
-      { belt: BeltColor.Green, date: '2024-01-20' }
+      { belt: BeltColor.White, date: '2022-01-10', notes: 'Início' },
+      { belt: BeltColor.Yellow, date: '2022-06-15', notes: 'Exame de Faixa' },
+      { belt: BeltColor.Red, date: '2022-12-10', notes: 'Exame de Faixa' },
+      { belt: BeltColor.Orange, date: '2023-06-20', notes: 'Exame de Faixa' },
+      { belt: BeltColor.Green, date: '2023-11-15', notes: 'Exame de Faixa' },
+      { belt: BeltColor.Purple, date: '2024-02-20', notes: 'Exame de Faixa Atual' }
     ],
-    // Login personalizado solicitado
+    // Login personalizado criado para o aluno
     customLogin: 'aluno',
     password: '1234'
   }

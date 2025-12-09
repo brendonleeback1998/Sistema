@@ -1,16 +1,16 @@
 import { Student, Payment, Plan, FinancialRecord, Product, AdminUser, BeltContent, ChatMessage } from '../types';
 import { MOCK_STUDENTS, MOCK_PAYMENTS, MOCK_PLANS, MOCK_FINANCIAL_RECORDS, MOCK_PRODUCTS, MOCK_CONTENT } from '../constants';
 
-// Alterei as chaves para _v2 para forçar um reset nos dados do navegador
+// Alterei as chaves para _v3 para forçar um reset nos dados do navegador
 const STORAGE_KEYS = {
-  STUDENTS: 'dojo_students_db_v2',
-  PAYMENTS: 'dojo_payments_db_v2',
-  PLANS: 'dojo_plans_db_v2',
-  FINANCIAL_RECORDS: 'dojo_financial_records_db_v2',
-  PRODUCTS: 'dojo_products_db_v2',
-  ADMINS: 'dojo_admins_db_v2',
-  CONTENT: 'dojo_content_db_v2',
-  MESSAGES: 'dojo_messages_db_v2'
+  STUDENTS: 'dojo_students_db_v3',
+  PAYMENTS: 'dojo_payments_db_v3',
+  PLANS: 'dojo_plans_db_v3',
+  FINANCIAL_RECORDS: 'dojo_financial_records_db_v3',
+  PRODUCTS: 'dojo_products_db_v3',
+  ADMINS: 'dojo_admins_db_v3',
+  CONTENT: 'dojo_content_db_v3',
+  MESSAGES: 'dojo_messages_db_v3'
 };
 
 // Admin solicitado: Brendon / 1803
