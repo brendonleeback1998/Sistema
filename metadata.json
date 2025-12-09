@@ -1,0 +1,5 @@
+{
+  "name": "Shogukan app",
+  "description": "Sistema completo de gestão para a escola Shogukan Karate, incluindo controle de alunos, graduações, financeiro e assistente de IA.",
+  "requestFramePermissions": []
+}
